@@ -125,6 +125,8 @@ namespace big
 
 		detour_hook_helper::add<hooks::allow_weapons_in_vehicle>("AWIV", g_pointers->m_gta.m_allow_weapons_in_vehicle);
 
+		detour_hook_helper::add<hooks::send_clone_sync>("SCS", g_pointers->m_gta.m_send_clone_sync);
+
 		g_hooking = this;
 	}
 
