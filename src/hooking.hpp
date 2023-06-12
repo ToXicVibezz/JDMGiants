@@ -78,6 +78,8 @@ namespace big
 		static bool fragment_physics_crash(uintptr_t a1, uint32_t a2, uintptr_t a3, uintptr_t a4, uintptr_t a5);
 		static bool fragment_physics_crash_2(float* a1, float* a2);
 
+		static void send_clone_sync(CNetworkObjectMgr* mgr, CNetGamePlayer* src, rage::netObject* netObject, rage::datBitBuffer* buffer, uint16_t* object_id, bool a6);
+
 		static void received_event(rage::netEventMgr* event_manager, CNetGamePlayer* source_player, CNetGamePlayer* target_player, uint16_t event_id, int event_index, int event_handled_bitset, int unk, rage::datBitBuffer* bit_buffer);
 
 		// these two aren't actually hooks, just helper functions for hooks
